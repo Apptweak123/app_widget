@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/_10pxv"
+    android:paddingVertical="@dimen/_20pxv">
+
+    <TextView
+        android:id="@+id/tv_next_prayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:text="@string/next_prayer"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_current_prayer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_next_prayer"
+        android:layout_alignParentStart="true"
+        android:text="@string/maghrib"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll_prayer_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_current_prayer_name"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_current_prayer_time_format"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/pm"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_current_prayer_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_prayer_time"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_current_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_prayer_time"
+        android:layout_marginTop="@dimen/_5pxv"
+        android:text="@string/saturday_12_october_2025"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_next_prayer"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30pxv"
+        android:layout_below="@+id/tv_next_prayer"
+        android:layout_marginStart="@dimen/_20pxv"
+        android:layout_marginTop="@dimen/_10pxv"
+        android:layout_toEndOf="@+id/ll_prayer_time">
+
+        <ImageView
+            android:id="@+id/iv_current_prayer"
+            android:layout_width="@dimen/_25pxv"
+            android:layout_height="@dimen/_25pxv"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/todo"
+            android:padding="@dimen/_2pxv"
+            android:src="@drawable/icon_isha_white"
+            />
+
+        <TextView
+            android:id="@+id/tv_next_prayer_time_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_10pxv"
+            android:layout_toEndOf="@+id/iv_current_prayer"
+            android:text="@string/current_prayer_time"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_next_prayer_time_format_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end"
+            android:layout_marginStart="@dimen/_10pxv"
+            android:layout_toEndOf="@+id/tv_next_prayer_time_first"
+            android:text="@string/pm"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30pxv"
+        android:layout_below="@+id/rl_next_prayer"
+        android:layout_marginStart="@dimen/_20pxv"
+        android:layout_marginTop="@dimen/_10pxv"
+        android:layout_toEndOf="@+id/ll_prayer_time">
+
+        <ImageView
+            android:id="@+id/iv_next_prayer"
+            android:layout_width="@dimen/_25pxv"
+            android:layout_height="@dimen/_25pxv"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/icon_fajar_white"
+           />
+
+        <TextView
+            android:id="@+id/tv_next_prayer_time_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_10pxv"
+            android:layout_toEndOf="@+id/iv_next_prayer"
+            android:text="@string/current_prayer_time"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_next_prayer_time_format_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end"
+            android:layout_marginStart="@dimen/_10pxv"
+            android:layout_toEndOf="@+id/tv_next_prayer_time_second"
+            android:text="@string/pm"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_current_prayer1111"
+        android:layout_width="@dimen/_70pxv"
+        android:layout_height="@dimen/_110pxv"
+        android:layout_below="@+id/tv_next_prayer"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-10dp"
+        android:layout_toEndOf="@+id/rl_next_prayer"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/img_next_prayer"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_location"
+        android:layout_width="@dimen/_25pxv"
+        android:layout_height="@dimen/_25pxv"
+        android:layout_below="@+id/tv_current_date"
+        android:layout_marginTop="@dimen/_10pxv"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/img_location" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_current_date"
+        android:layout_marginStart="@dimen/_10pxv"
+        android:layout_marginTop="@dimen/_10pxv"
+        android:layout_toEndOf="@+id/iv_location"
+        android:text="@string/saudi_arabia"
+        android:textColor="@color/white"
+        android:textCursorDrawable="@drawable/img_location"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_hijri_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_current_date"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_10pxv"
+        android:text="@string/saturday_12_october_2025"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+</RelativeLayout>
