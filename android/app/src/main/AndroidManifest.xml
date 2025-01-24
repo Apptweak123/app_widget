@@ -28,28 +28,6 @@
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
         android:label="appwidget">
-<receiver
-            android:name=".ModernFastingTimeWidget"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/modern_fasting_time_info" />
-        </receiver>
-         <!-- <receiver
-            android:name=".SmallSizePrayerWidget"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/small_size_prayer_widget_info" />
-        </receiver> -->
         <receiver
             android:name=".CurrentPrayerTime"
             android:exported="false">
@@ -61,8 +39,8 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/current_prayer_info" />
         </receiver>
-        <!-- <receiver
-            android:name=".ThirdPrayerWidget"
+         <receiver
+            android:name=".TodayDateTimeWidget"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -70,11 +48,10 @@
 
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/third_prayer_widget_info" />
-        </receiver> -->
-        
+                android:resource="@xml/today_date_time_widget_info" />
+        </receiver>
         <receiver
-            android:name=".PrayerLargeSize"
+            android:name=".ModernFastingTimeWidget"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -82,7 +59,7 @@
 
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/prayer_larg_size_info" />
+                android:resource="@xml/modern_fasting_time_info" />
         </receiver>
         <receiver
             android:name=".RamzanSecondCard"
@@ -95,6 +72,29 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/ramzan_second_card_info" />
         </receiver>
+        <receiver
+            android:name=".RamzanAppWidget"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/ramzan_app_widget_info" />
+        </receiver>
+        <receiver
+            android:name=".PrayerLargeSize"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/prayer_larg_size_info" />
+        </receiver>
+        
 
         <activity
             android:name=".MainActivity"
@@ -126,29 +126,6 @@
  Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
         -->
-        <receiver
-            android:name=".RamzanAppWidget"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/ramzan_app_widget_info" />
-        </receiver>
-        <!-- <receiver
-            android:name=".HomeWidgetExampleProvider"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/home_widget_example" />
-        </receiver> -->
-
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
