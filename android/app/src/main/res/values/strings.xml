@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">WidgetSampleProject</string>
+    <string name="appwidget_text">Today Fasting Times</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="asr">Asr</string>
+    <string name="pm">PM</string>
+    <string name="current_prayer_time">06:04</string>
+    <string name="todo">Todo</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="next_prayer">Next Prayer</string>
+    <string name="saturday_12_october_2025">Saturday - 12 October 2025</string>
+    <string name="saudi_arabia">Saudi Arabia</string>
+    <string name="today_fasting_times">Today Fasting Times</string>
+    <string name="sehri_time">Sehri Time</string>
+    <string name="iftar_time">Iftar Time</string>
+    <string name="am">AM</string>
+    <string name="suhur">Suhur</string>
+    <string name="iftar">Iftar</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/item_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:minWidth="52dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="33dp"
+            android:background="@drawable/itemholder_background"
+            android:layout_height="33dp"
+            android:gravity="center"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="20dp"
+                android:id="@+id/widget_image"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/asaricon" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/widget_prayerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Fajr"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/widget_prayerTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7:32"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            android:paddingBottom="3dp"
+            android:gravity="center"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

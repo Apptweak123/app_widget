@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Android.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/widget_background"
+    android:layout_margin="0dp"
+    android:padding="0dp"
+    android:theme="@style/Theme.Android.AppWidgetContainer">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <LinearLayout
+           android:id="@+id/header_container"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="0dp"
+           android:background="@drawable/round_top_corner"
+           android:orientation="vertical">
+
+           <TextView
+               android:id="@+id/vertical_hijriDate"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_marginTop="4dp"
+               android:layout_marginBottom="5dp"
+               android:textColor="#FFFFFF"
+               android:textSize="16sp"
+               android:textStyle="bold" />
+           <TextView
+               android:id="@+id/vertical_currentDateTime"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="10sp"
+               android:layout_marginBottom="4dp"
+               android:textColor="#FFFFFF"
+               android:gravity="center"
+               android:textStyle="normal" />
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:background="@drawable/widget_background"
+           android:visibility="invisible"
+           android:id="@+id/prayer_verticalContainer">
+       </LinearLayout>
+
+   </LinearLayout>
+
+
+</RelativeLayout>

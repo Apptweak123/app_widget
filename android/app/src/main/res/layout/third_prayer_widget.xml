@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Android.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:layout_margin="0dp"
+    android:background="@drawable/small_size_prayer_background"
+    android:theme="@style/Theme.Android.AppWidgetContainer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/third_prayerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="Maghrib"
+                    android:text="Maghrib"
+                    android:textSize="14sp"
+                    android:textColor="@color/default_color"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/third_timeForMat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:contentDescription="PM"
+                    android:text="PM"
+                    android:textSize="10sp"
+                    android:textColor="@color/default_color"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/third_prayerTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="06:05"
+                    android:text="06:05"
+                    android:textSize="46sp"
+                    android:textColor="@color/default_color"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/third_currentDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Saturday - 12 October, 2024"
+                    android:text="Saturday - 12 October, 2024"
+                    android:textSize="10sp"
+                    android:textColor="@color/default_color"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Next Prayer"
+                    android:text="Next Prayer"
+                    android:textSize="10sp"
+                    android:textColor="@color/default_color"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:tint="@color/default_color"
+                        android:src="@drawable/asaricon"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:contentDescription="07:05 pm"
+                        android:text="07:05 pm"
+                        android:textSize="14sp"
+                        android:textColor="@color/default_color"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:tint="@color/default_color"
+                        android:src="@drawable/asaricon"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:contentDescription="07:05 pm"
+                        android:text="07:05 pm"
+                        android:textSize="14sp"
+                        android:textColor="@color/default_color"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+               <ImageView
+                   android:layout_width="78dp"
+                   android:layout_height="78dp"
+                   android:tint="@color/default_color"
+                   android:src="@drawable/asaricon"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="14dp"
+                    android:tint="@color/default_color"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/locationicon"/>
+                <TextView
+                    android:id="@+id/location_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="Maghrib"
+                    android:text="Location"
+                    android:textSize="10sp"
+                    android:textColor="@color/default_color"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/third_hijriDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="Maghrib"
+                android:text="Rabiʻ II 7, 1446 AH"
+                android:textSize="14sp"
+                android:textColor="@color/default_color"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
