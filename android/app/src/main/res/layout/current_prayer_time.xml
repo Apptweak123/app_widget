@@ -1,9 +1,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/Widget.Android.AppWidget.Container"
+
     android:layout_width="150dp"
     android:layout_height="150dp"
     android:layout_margin="0dp"
     android:paddingTop="15dp"
+    android:background="@drawable/bg_gradient"
     android:paddingHorizontal="10dp"
     android:orientation="vertical">
 
@@ -34,7 +35,7 @@
         android:textSize="40sp"
         android:textStyle="bold"
         android:textColor="@color/white"/>
-    <!-- <ImageView
+    <ImageView
         android:id="@+id/iv_current_prayer"
         android:layout_width="70dp"
         android:layout_height="70dp"
@@ -44,5 +45,5 @@
         android:layout_alignParentEnd="true"
         android:contentDescription="@string/todo"
         android:textStyle="bold"
-        android:textColor="@color/white"/> -->
+        android:textColor="@color/white"/>
 </RelativeLayout>
