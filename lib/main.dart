@@ -497,6 +497,31 @@ class _MyAppState extends State<MyApp> {
 //                       qualifiedAndroidName: 'com.example.appwidget.PrayerLargeSize',
 //                       name: 'PrayerLargeSize',
 //                     );
+                    HomeWidget.saveWidgetData("current_prayer_name", 'Maghrib');
+                    HomeWidget.saveWidgetData("current_prayer_time_format", 'PM');
+                    HomeWidget.saveWidgetData("current_prayer_time", "06:04");
+                    HomeWidget.updateWidget(
+                      qualifiedAndroidName: 'com.example.appwidget.CurrentPrayerTime',
+                      name: 'CurrentPrayerTime',
+                    );
+
+// Update current prayer details Today Date and Time
+                    HomeWidget.saveWidgetData("current_prayer_name", "Fajr");
+                    HomeWidget.saveWidgetData("current_prayer_time", "05:00");
+                    HomeWidget.saveWidgetData("Tcurrent_date", "Saturday - 12 October, 2024");
+                    HomeWidget.saveWidgetData("hijri_date", "Rabiʻ II 7, 1446 AH");
+                    HomeWidget.saveWidgetData("next_prayer_time_first", "12:30");
+                    HomeWidget.saveWidgetData("next_prayer_time_second", "15:45");
+                    HomeWidget.saveWidgetData("current_prayer_time_format", "AM");
+                    HomeWidget.saveWidgetData("next_prayer_time_format_first", "PM");
+                    HomeWidget.saveWidgetData("next_prayer_time_format_second", "PM");
+                    HomeWidget.saveWidgetData("current_location", "Makkah, Saudi Arabia");
+
+                    HomeWidget.updateWidget(
+                      qualifiedAndroidName: 'com.example.appwidget.TodayDateTimeWidget',
+                      name: 'TodayDateTimeWidget',
+                    );
+
 // // Today Fasting Time Sheri and iftari Widget Work and Widget Name is
                     HomeWidget.saveWidgetData('modren_sehri_Time', "00:00");
 
