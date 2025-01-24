@@ -457,59 +457,59 @@ class _MyAppState extends State<MyApp> {
               if (_isRequestPinWidgetSupported)
                 ElevatedButton(
                   onPressed: () {
-                    HomeWidget.saveWidgetData('hijri_date', "1446 Rajab 12");
-                    HomeWidget.saveWidgetData('current_date', "12 - Jan - 2025");
+//                     HomeWidget.saveWidgetData('hijri_date', "1446 Rajab 12");
+//                     HomeWidget.saveWidgetData('current_date', "12 - Jan - 2025");
 
-                    HomeWidget.saveWidgetData('fajar_prayer_name', "Fajr");
-                    HomeWidget.saveWidgetData('fajar_prayer_time', "05:00 AM");
+//                     HomeWidget.saveWidgetData('fajar_prayer_name', "Fajr");
+//                     HomeWidget.saveWidgetData('fajar_prayer_time', "05:00 AM");
 
-                    HomeWidget.saveWidgetData('dhuhr_prayer_name', "Dhuhr");
-                    HomeWidget.saveWidgetData('dhuhr_prayer_time', "12:30 PM");
+//                     HomeWidget.saveWidgetData('dhuhr_prayer_name', "Dhuhr");
+//                     HomeWidget.saveWidgetData('dhuhr_prayer_time', "12:30 PM");
 
-                    HomeWidget.saveWidgetData('asar_prayer_name', "Asar");
-                    HomeWidget.saveWidgetData('asar_prayer_time', "03:45 PM");
+//                     HomeWidget.saveWidgetData('asar_prayer_name', "Asar");
+//                     HomeWidget.saveWidgetData('asar_prayer_time', "03:45 PM");
 
-                    HomeWidget.saveWidgetData('maghrib_prayer_name', "Maghrib");
-                    HomeWidget.saveWidgetData('maghrib_prayer_time', "06:15 PM");
+//                     HomeWidget.saveWidgetData('maghrib_prayer_name', "Maghrib");
+//                     HomeWidget.saveWidgetData('maghrib_prayer_time', "06:15 PM");
 
-                    HomeWidget.saveWidgetData('isha_prayer_name', "Isha");
-                    HomeWidget.saveWidgetData('isha_prayer_time', "07:30 PM");
+//                     HomeWidget.saveWidgetData('isha_prayer_name', "Isha");
+//                     HomeWidget.saveWidgetData('isha_prayer_time', "07:30 PM");
 
-                    HomeWidget.saveWidgetData('hijri_date', "1446 رجب 12");
-                    HomeWidget.saveWidgetData('current_date', "12 - يناير - 2025");
+//                     HomeWidget.saveWidgetData('hijri_date', "1446 رجب 12");
+//                     HomeWidget.saveWidgetData('current_date', "12 - يناير - 2025");
 
-                    HomeWidget.saveWidgetData('fajar_prayer_name', "الفجر");
-                    HomeWidget.saveWidgetData('fajar_prayer_time', "05:00 ");
+//                     HomeWidget.saveWidgetData('fajar_prayer_name', "الفجر");
+//                     HomeWidget.saveWidgetData('fajar_prayer_time', "05:00 ");
 
-                    HomeWidget.saveWidgetData('dhuhr_prayer_name', "الظهر");
-                    HomeWidget.saveWidgetData('dhuhr_prayer_time', "12:30 ");
+//                     HomeWidget.saveWidgetData('dhuhr_prayer_name', "الظهر");
+//                     HomeWidget.saveWidgetData('dhuhr_prayer_time', "12:30 ");
 
-                    HomeWidget.saveWidgetData('asar_prayer_name', "العصر");
-                    HomeWidget.saveWidgetData('asar_prayer_time', "03:45 ");
+//                     HomeWidget.saveWidgetData('asar_prayer_name', "العصر");
+//                     HomeWidget.saveWidgetData('asar_prayer_time', "03:45 ");
 
-                    HomeWidget.saveWidgetData('maghrib_prayer_name', "المغرب");
-                    HomeWidget.saveWidgetData('maghrib_prayer_time', "06:15 ");
+//                     HomeWidget.saveWidgetData('maghrib_prayer_name', "المغرب");
+//                     HomeWidget.saveWidgetData('maghrib_prayer_time', "06:15 ");
 
-                    HomeWidget.saveWidgetData('isha_prayer_name', "العشاء");
-                    HomeWidget.saveWidgetData('isha_prayer_time', "07:30 ");
+//                     HomeWidget.saveWidgetData('isha_prayer_name', "العشاء");
+//                     HomeWidget.saveWidgetData('isha_prayer_time', "07:30 ");
 
-                    HomeWidget.updateWidget(
-                      qualifiedAndroidName: 'com.example.appwidget.PrayerLargeSize',
-                      name: 'PrayerLargeSize',
-                    );
-// Today Fasting Time Sheri and iftari Widget Work and Widget Name is
-                    HomeWidget.saveWidgetData('sehri_time', "01:01");
+//                     HomeWidget.updateWidget(
+//                       qualifiedAndroidName: 'com.example.appwidget.PrayerLargeSize',
+//                       name: 'PrayerLargeSize',
+//                     );
+// // Today Fasting Time Sheri and iftari Widget Work and Widget Name is
+//                     HomeWidget.saveWidgetData('sehri_time', "01:01");
 
-                    HomeWidget.saveWidgetData('sehritime_formate', "AM");
-                    HomeWidget.saveWidgetData('iftar_time', "02:12");
-                    HomeWidget.saveWidgetData('iftaritime_formate', "PM");
+//                     HomeWidget.saveWidgetData('sehritime_formate', "AM");
+//                     HomeWidget.saveWidgetData('iftar_time', "02:12");
+//                     HomeWidget.saveWidgetData('iftaritime_formate', "PM");
 
-                    HomeWidget.updateWidget(
-                      qualifiedAndroidName: 'com.example.appwidget.RamzanAppWidget',
-                      name: 'RamzanAppWidget',
-                    );
+//                     HomeWidget.updateWidget(
+//                       qualifiedAndroidName: 'com.example.appwidget.RamzanAppWidget',
+//                       name: 'RamzanAppWidget',
+//                     );
 
-// Today Fasting Time Widget Work and Widget Name is
+                    // Today Fasting Time Widget Work and Widget Name is
                     HomeWidget.saveWidgetData('current_date', "Ramadan Day 29");
                     HomeWidget.saveWidgetData('sehri_Time', "6:00");
                     HomeWidget.saveWidgetData('sehritime_formate', "AM");
