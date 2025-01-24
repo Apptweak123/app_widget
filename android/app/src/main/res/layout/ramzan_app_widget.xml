@@ -1,112 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    style="@style/Widget.Android.AppWidget.Container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="0dp"
-    android:padding="0dp"
-    android:background="@drawable/img_today_fasting_times_2">
+    android:layout_height="@dimen/_150pxv"
+    android:background="@drawable/img_today_fasting_times_1"
+    android:padding="@dimen/_10pxv">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/today_fasting_times"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/_5pxv"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:layout_margin="0dp"
-        android:padding="10dp"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/appwidget_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="start"
-            android:text="No Title"
-            android:textSize="24sp"
-            android:textColor="#FFFFFF"
-            android:paddingBottom="16dp"
-            android:textStyle="bold" />
-        <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:orientation="horizontal"
-           android:gravity="start">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="@dimen/_15pxv"
+        android:orientation="horizontal"
+        android:weightSum="2">
 
-            <LinearLayout
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_80pxv"
+            android:layout_marginHorizontal="@dimen/_5pxv"
+            android:layout_weight="1"
+            android:background="@drawable/bg_light_green">
+
+            <TextView
+                android:id="@+id/tv_sehri_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:orientation="horizontal"
-                android:padding="10dp"
-                android:background="#D8FDD2">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:gravity="start"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/sehriText"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Sehri Time"
-                            android:textSize="12sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:id="@+id/tv_sehri_time"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="03:56 AM"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/img_sehri" />
-            </LinearLayout>
-
+                android:layout_marginStart="@dimen/_10pxv"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:text="@string/sehri_time"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <LinearLayout
+                android:id="@+id/ll_sehri"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:orientation="horizontal"
-                android:padding="10dp"
-                android:background="#EFD7BE">
-                <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:gravity="start"
-                        android:orientation="vertical">
+                android:layout_below="@+id/tv_sehri_name"
+                android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/iftirari_timetext"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Sehri Time"
-                            android:textSize="12sp"
-                            android:textStyle="italic" />
+                <TextView
+                    android:id="@+id/tv_sehri_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10pxv"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:text="03:56"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
 
-                        <TextView
-                            android:id="@+id/tv_iftar_time"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="03:56 AM"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-                <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/img_iftari" />
-
+                <TextView
+                    android:id="@+id/tv_sehri_time_format"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="@dimen/_5pxv"
+                    android:text="@string/am"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
-       </LinearLayout>
+            <ImageView
+                android:layout_width="@dimen/_70pxv"
+                android:layout_height="@dimen/_70pxv"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/ll_sehri"
+                android:src="@drawable/img_sehri" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_80pxv"
+            android:layout_marginHorizontal="@dimen/_5pxv"
+        
+            android:paddingEnd="@dimen/_5pxv"
+            android:background="@drawable/bg_light_orange"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_iftar_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxv"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:text="@string/iftar_time"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ll_iftar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_iftar_name"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_iftar_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10pxv"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:text="06:15"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_iftar_time_format"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="@dimen/_5pxv"
+                    android:text="@string/pm"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_70pxv"
+                android:layout_height="@dimen/_70pxv"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/ll_iftar"
+                android:src="@drawable/img_iftari" />
+
+        </RelativeLayout>
     </LinearLayout>
 </RelativeLayout>

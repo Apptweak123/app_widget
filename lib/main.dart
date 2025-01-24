@@ -498,16 +498,16 @@ class _MyAppState extends State<MyApp> {
 //                       name: 'PrayerLargeSize',
 //                     );
 // // Today Fasting Time Sheri and iftari Widget Work and Widget Name is
-//                     HomeWidget.saveWidgetData('sehri_time', "01:01");
+                    HomeWidget.saveWidgetData('modren_sehri_Time', "00:00");
 
-//                     HomeWidget.saveWidgetData('sehritime_formate', "AM");
-//                     HomeWidget.saveWidgetData('iftar_time', "02:12");
-//                     HomeWidget.saveWidgetData('iftaritime_formate', "PM");
+                    HomeWidget.saveWidgetData('modren_sehritime_formate', "AM");
+                    HomeWidget.saveWidgetData('modren_iftar_time', "02:12");
+                    HomeWidget.saveWidgetData('modren_iftaritime_formate', "PM");
 
-//                     HomeWidget.updateWidget(
-//                       qualifiedAndroidName: 'com.example.appwidget.RamzanAppWidget',
-//                       name: 'RamzanAppWidget',
-//                     );
+                    HomeWidget.updateWidget(
+                      qualifiedAndroidName: 'com.example.appwidget.RamzanAppWidget',
+                      name: 'RamzanAppWidget',
+                    );
 
                     // Today Fasting Time Widget Work and Widget Name is
                     HomeWidget.saveWidgetData('current_date', "Ramadan Day 29");

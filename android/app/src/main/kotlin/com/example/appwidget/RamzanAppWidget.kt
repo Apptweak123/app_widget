@@ -29,16 +29,16 @@ internal fun updateAppWidget(
     appWidgetId: Int,
     widgetData: SharedPreferences
 ) {
-   val sehriTime = widgetData.getString("sehri_Time", null)
-    val sehriTimeFormate = widgetData.getString("sehritime_formate", null)
-    val iftarTime = widgetData.getString("iftar_time", null)
-    val iftariTimeFormate = widgetData.getString("iftaritime_formate", null)
+  val sehriTime = widgetData.getString("modren_sehri_Time", null)
+    val sehriTimeFormate = widgetData.getString("modren_sehritime_formate", null)
+    val iftarTime = widgetData.getString("modren_iftar_time", null)
+    val iftariTimeFormate = widgetData.getString("modren_iftaritime_formate", null)
     val views = RemoteViews(context.packageName, R.layout.ramzan_app_widget)
-    if (sehriTime != null) views.setTextViewText(R.id.tv_sehri_time, sehriTime)
-//    if (sehriTimeFormate != null) views.setTextViewText(R.id.tv_sehri_time_format, sehriTimeFormate)
+    if (sehriTime != null) views.setTextViewText(R.id.tv_sehri_time, sehriTime)   
+     if (sehriTimeFormate != null) views.setTextViewText(R.id.tv_sehri_time_format, sehriTimeFormate)
     if (iftarTime != null) views.setTextViewText(R.id.tv_iftar_time, iftarTime)
-   /* if (iftariTimeFormate != null) views.setTextViewText(
+    if (iftariTimeFormate != null) views.setTextViewText(
         R.id.tv_iftar_time_format, iftariTimeFormate
-    )*/
+    )
     appWidgetManager.updateAppWidget(appWidgetId, views)
 }
